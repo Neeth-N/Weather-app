@@ -1,0 +1,35 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+    <link rel="stylesheet" href="style2.css">
+    <title>Weather App</title>
+    </head>
+    <body>
+    <div class="container">
+        <div align='center'><h1 class="hbox">Weather App</h1></div>
+        <div class="ser" align="center">
+        <form id="search-form">
+            <label for="city">Enter city name:</label>
+            <input type="text" id="city" name="city" required>
+            <button type="submit">Get Forecast</button>
+        </form>
+        </div><br>
+        <div class="current-weather" align="center">
+        <h2>Current Weather</h2>
+        <div class="curr">
+        <p id="current-location">Location: </p>
+        <p id="current-temperature">Temperature: </p>
+        <p id="current-description">Description: </p>
+        <p id="current-humidity">Humidity: </p>
+        <p id="current-wind-speed">Wind Speed: </p>
+        <p id="current-date-time">Date and Time: </p>
+        </div>
+        </div><br>
+        <div class="forecast">
+        <h2>Forecast of Next 7 Days</h2><br>
+        <div class="forecast-container" id="forecast-container"></div>
+        </div>
+    </div>
+    <script src="weather.js"></script>
+    </body>
+    </html>
